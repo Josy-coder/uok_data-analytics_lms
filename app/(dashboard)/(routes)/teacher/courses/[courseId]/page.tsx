@@ -64,6 +64,10 @@ const CourseIdPage = async ({
                         initialData={course}
                         courseId={course.id}
                     />
+                     <DescriptionForm
+                        initialData={course}
+                        courseId={course.id}
+                    />
                 </div>
             </div>
         </div>
