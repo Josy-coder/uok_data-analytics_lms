@@ -140,7 +140,7 @@ const CourseIdPage = async ({
               <div className="flex items-center gap-x-2">
                 <IconBadge icon={CircleDollarSign} />
                 <h2 className="text-xl">
-                  Sell the course
+                  Sell your course
                 </h2>
               </div>
               <PriceForm
