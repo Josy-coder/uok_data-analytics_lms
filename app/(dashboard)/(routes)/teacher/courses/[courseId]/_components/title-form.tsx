@@ -94,7 +94,7 @@ export const TitleForm = ({
                   <FormControl>
                     <Input
                       disabled={isSubmitting}
-                      placeholder="e.g. 'Advanced excel"
+                      placeholder="e.g. 'Advanced web development'"
                       {...field}
                     />
                   </FormControl>
