@@ -83,14 +83,6 @@ const CourseIdPage = async ({
       <div className="p-6">
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-y-2">
-            <h1 className="text-2xl font-medium">
-              Course setup
-            </h1>
-            <span className="text-sm text-slate-700">
-              Complete all fields {completionText}
-            </span>
-            <span></span>
-            <span className="text-sm text-slate-700">
               <Link
                 href="/teacher/courses"
                 className="flex items-center text-sm hover:opacity-75 transition mb-6"
@@ -98,6 +90,11 @@ const CourseIdPage = async ({
                 <ArrowLeft className="h-4 w-4 mr-2" />
                       Back to Courses
               </Link>
+            <h1 className="text-2xl font-medium">
+              Course setup
+            </h1>
+            <span className="text-sm text-slate-700">
+              Complete all fields {completionText}
             </span>
           </div>
           <Actions
