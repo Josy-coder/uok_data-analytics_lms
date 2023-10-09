@@ -79,13 +79,7 @@ const CourseIdPage = async ({
           label="This course is unpublished. It will not be visible to the students."
         />
       )}
-      <Link
-        href="/teacher/courses"
-        className="flex items-center text-sm hover:opacity-75 transition mb-6"
-        >
-        <ArrowLeft className="h-4 w-4 mr-2" />
-              Back to course setup
-      </Link>
+
       <div className="p-6">
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-y-2">
@@ -95,6 +89,22 @@ const CourseIdPage = async ({
             <span className="text-sm text-slate-700">
               Complete all fields {completionText}
             </span>
+            <span></span>
+            <span className="text-sm text-slate-700">
+              <Link
+                href="/teacher/courses"
+                className="flex items-center text-sm hover:opacity-75 transition mb-6"
+                >
+                <ArrowLeft className="h-4 w-4 mr-2" />
+                      Back to Courses
+              </Link>
+            </span>
+              <Link href="/dashboard/courses">
+                <a className="flex items-center gap-x-2 hover:text-slate-600">
+                  <ArrowLeft size={16} />
+                  Back to courses
+                </a>
+              </Link>
           </div>
           <Actions
             disabled={!isComplete}
