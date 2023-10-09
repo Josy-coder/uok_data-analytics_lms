@@ -99,12 +99,6 @@ const CourseIdPage = async ({
                       Back to Courses
               </Link>
             </span>
-              <Link href="/dashboard/courses">
-                <a className="flex items-center gap-x-2 hover:text-slate-600">
-                  <ArrowLeft size={16} />
-                  Back to courses
-                </a>
-              </Link>
           </div>
           <Actions
             disabled={!isComplete}
