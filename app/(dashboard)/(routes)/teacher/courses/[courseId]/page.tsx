@@ -1,6 +1,6 @@
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-import { CircleDollarSign, File, LayoutDashboard, ListChecks } from "lucide-react";
+import { ArrowLeft, CircleDollarSign, File, LayoutDashboard, ListChecks } from "lucide-react";
 
 import { db } from "@/lib/db";
 import { IconBadge } from "@/components/icon-badge";
@@ -14,6 +14,7 @@ import { PriceForm } from "./_components/price-form";
 import { AttachmentForm } from "./_components/attachment-form";
 import { ChaptersForm } from "./_components/chapters-form";
 import { Actions } from "./_components/actions";
+import Link from "next/link";
 
 const CourseIdPage = async ({
   params
@@ -78,6 +79,13 @@ const CourseIdPage = async ({
           label="This course is unpublished. It will not be visible to the students."
         />
       )}
+      <Link
+        href="/teacher/courses"
+        className="flex items-center text-sm hover:opacity-75 transition mb-6"
+        >
+        <ArrowLeft className="h-4 w-4 mr-2" />
+              Back to course setup
+      </Link>
       <div className="p-6">
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-y-2">
